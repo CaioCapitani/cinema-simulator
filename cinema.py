@@ -28,5 +28,5 @@ while True:
         else:
             print("Você é muito novo para assistir esse filme")
     else:
-        print("Não temos esse filme em cartaz...")
+        print("Não temos esse filme em cartaz...") 
 
