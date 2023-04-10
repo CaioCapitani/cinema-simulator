@@ -11,8 +11,8 @@ while True:
 
     print("Bem vindo ao Cinema, essas são as nossas sessões disponíveis:")
 
-    for key, info in filmes.items():
-        print("\nFilme:" , key)
+    for filme_nome, info in filmes.items():
+        print("\nFilme:" , filme_nome)
 
         for key in info:
             print(key + ":", info[key], "anos" if key == "Classificação" else "disponíveis")
