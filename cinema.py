@@ -1,32 +1,43 @@
 filmes = {
-    "Procurando Nemo": [3,5],
-    "Tarzan": [15,5],
-    "Interestellar": [12, 5],
-    "Her": [14, 5]
+    "Procurando Nemo": {"Classificação":3,"Ingresso":5},
+    "Tarzan": {"Classificação":15, "Ingresso":5},
+    "Interestellar": {"Classificação":12, "Ingresso":5},
+    "Her": {"Classificação":14, "Ingresso":5}
     }
 
 while True:
+    barra = "="*62 # criação da barra para formatar terminal
+    print(barra)
 
-    escolha = input("Qual filme você gostaria de assistir? ").strip().title()
+    print("Bem vindo ao Cinema, essas são as nossas sessões disponíveis:")
+
+    for key, info in filmes.items():
+        print("\nFilme:" , key)
+
+        for key in info:
+            print(key + ":", info[key], "anos" if key == "Classificação" else "disponíveis")
+
+
+    escolha = input("\nQual filme você gostaria de assistir? ").strip().title()
 
     if escolha in filmes:
         age = int(input("Qual a sua idade?: ").strip())
 
         # checar idade do usuário
 
-        if age >= filmes[escolha][0]:
+        if age >= filmes[escolha]["Classificação"]:
 
             # checar assentos livres
 
-            num_assentos = filmes[escolha][1]
+            num_assentos = filmes[escolha]["Ingresso"]
 
-            if filmes[escolha][1] > 0:
+            if filmes[escolha]["Ingresso"] > 0:
                 print("Aproveite o filme!")
-                filmes[escolha][1] = filmes[escolha][1] - 1
+                filmes[escolha]["Ingresso"] = filmes[escolha]["Ingresso"] - 1
             else:
-                print("Desculpa, a sessão esgotou!")  
+                print("\nDesculpa, a sessão esgotou!")  
         else:
-            print("Você é muito novo para assistir esse filme")
+            print("\nVocê é muito novo para assistir esse filme")
     else:
-        print("Não temos esse filme em cartaz...") 
+        print("\nNão temos esse filme em cartaz...") 
 
