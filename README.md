@@ -6,9 +6,13 @@ Este é um programa em Python que simula um cinema, permitindo que o usuário es
 
 O programa inicia com um dicionário que contém o nome dos filmes em cartaz e suas respectivas classificações indicativas e a quantidade de assentos livres em cada sessão. 
 
-Em seguida, um loop while começa a ser executado, permitindo que o usuário selecione um filme digitando seu nome. Se o filme estiver em cartaz, o usuário deverá informar sua idade para que o programa verifique se ele pode assistir ao filme escolhido.
+Em seguida, um loop while começa a ser executado, permitindo que o usuário selecione um filme digitando seu nome. Se o filme estiver em cartaz, o programa deverá exibir informações sobre o filme, incluindo a classificação indicativa e a quantidade de ingressos disponíveis.
 
-Se a idade do usuário for igual ou superior à classificação indicativa do filme, o programa verifica se há assentos livres para a sessão escolhida. Se houver assentos disponíveis, o programa informa ao usuário que ele pode aproveitar o filme e atualiza a quantidade de assentos livres no dicionário de filmes. Caso contrário, o programa informa ao usuário que a sessão está esgotada.
+
+
+Depois disso, o usuário deverá informar sua idade para que o programa verifique se ele pode assistir ao filme escolhido.
+
+Se a idade do usuário for igual ou superior à classificação indicativa do filme, o programa verifica se há assentos livres para a sessão escolhida. Se houver assentos disponíveis, o programa informa ao usuário que ele pode aproveitar o filme e atualiza a quantidade de ingressos disponíveis no dicionário de filmes. Caso contrário, o programa informa ao usuário que a sessão está esgotada.
 
 Se a idade do usuário for inferior à classificação indicativa do filme, o programa informa ao usuário que ele é muito jovem para assistir ao filme.
 
@@ -22,4 +26,4 @@ Certifique-se de que o arquivo do programa e o ambiente Python estejam na mesma 
 
 ## Observação
 
-Projeto criado na data 08/04/2023
+Projeto atualizado na data 09/04/2023
