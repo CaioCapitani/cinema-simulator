@@ -8,8 +8,6 @@ O programa inicia com um dicionário que contém o nome dos filmes em cartaz e s
 
 Em seguida, um loop while começa a ser executado, permitindo que o usuário selecione um filme digitando seu nome. Se o filme estiver em cartaz, o programa deverá exibir informações sobre o filme, incluindo a classificação indicativa e a quantidade de ingressos disponíveis.
 
-
-
 Depois disso, o usuário deverá informar sua idade para que o programa verifique se ele pode assistir ao filme escolhido.
 
 Se a idade do usuário for igual ou superior à classificação indicativa do filme, o programa verifica se há assentos livres para a sessão escolhida. Se houver assentos disponíveis, o programa informa ao usuário que ele pode aproveitar o filme e atualiza a quantidade de ingressos disponíveis no dicionário de filmes. Caso contrário, o programa informa ao usuário que a sessão está esgotada.
