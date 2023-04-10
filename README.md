@@ -2,6 +2,12 @@
 
 Este é um programa em Python que simula um cinema, permitindo que o usuário escolha um filme e verificando se ele pode assistir com base em sua idade e se ainda há assentos disponíveis na sessão escolhida.
 
+## Como usar
+
+1. Abra um ambiente de desenvolvimento Python.
+2. Copie e cole o código em um novo arquivo Python.
+3. Execute o arquivo Python.
+
 ## Funcionamento
 
 O programa inicia com um dicionário que contém o nome dos filmes em cartaz e suas respectivas classificações indicativas e a quantidade de assentos livres em cada sessão. 
