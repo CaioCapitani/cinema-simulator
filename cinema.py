@@ -17,7 +17,6 @@ while True:
         for key in info:
             print(key + ":", info[key], "anos" if key == "Classificação" else "disponíveis")
 
-
     escolha = input("\nQual filme você gostaria de assistir? ").strip().title()
 
     if escolha in filmes:
